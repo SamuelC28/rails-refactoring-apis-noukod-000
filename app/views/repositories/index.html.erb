@@ -16,7 +16,7 @@
 <div class = "container">
   <h1><%= session[:username] %>'s Repos</h1>
   <% @repos_array.each do |repo| %>
-  <%= repo.name %> 
+    <%= repo.name %> 
     <%= link_to repo.name, repo.url %><br>
   <% end %>
 
